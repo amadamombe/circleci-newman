@@ -6,12 +6,9 @@ jobs:
     executor: newman/postman-newman-docker
     steps:
       - checkout
-      - run-newman-tests:
-          name: Run Newman Tests
-          command: newman/newman-run
-          args:
-            collection: ./collection.json
-            environment: ./env.json
+      - newman/newman-run:
+          collection: ./collection.json
+          environment: ./env.json
 workflows:
   version: 2
   build-and-test:
