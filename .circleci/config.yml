@@ -9,3 +9,8 @@ jobs:
       - newman/newman-run:
           collection: ./collection.json
           environment: ./env.json
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - build
