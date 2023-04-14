@@ -1,0 +1,11 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "newman app",
+  "main": "index.js",
+  "scripts": {
+    "test": "newman run collection.json -e env.json"
+  },
+  "author": "a madamombe",
+  "license": "ISC"
+}
