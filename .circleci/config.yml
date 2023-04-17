@@ -12,6 +12,14 @@ jobs:
 workflows:
   version: 2
 
+  build and trigger:
+    jobs:
+      - build:
+           filters:
+             branches:
+               only:
+                 - main
+
   build and test:
     jobs:
       - build:
