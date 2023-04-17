@@ -21,8 +21,4 @@ workflows:
                 - main
     triggers:
       - schedule:
-          cron: "00 07 * * 1"
-          filters:
-            branches:
-              only:
-                - main         
+          cron: "00 07 * * 1"      
