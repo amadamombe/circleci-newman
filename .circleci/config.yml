@@ -12,7 +12,7 @@ jobs:
 workflows:
   version: 2
 
-  your-workflow-name:
+  build and test:
     jobs:
       - build:
           filters:
