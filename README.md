@@ -8,6 +8,10 @@ The url is here: <https://jsonplaceholder.typicode.com/todos>
 
 ### Run tests
 
-in the test folder run:
+in the root run:
 
         newman run collection.json -e env.json
+
+OR
+
+       npm run test
